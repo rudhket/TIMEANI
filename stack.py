@@ -5,12 +5,12 @@ def view( ):
         print(stack[x])
 
 def push( ):
-    item=int(input("Enter integer value: "))
+    item=int(input("Kindly Enter Integer Value: "))
     stack.append(item)
 
 def pop( ):
     if(stack==[ ]):
-        print("Stack is empty")
+        print("Requested stack is empty")
     else:
         item=stack.pop(-1)
         print("Deleted element: ",item)
@@ -28,7 +28,7 @@ print("4.peek")
 print("5.exit")
 
 while True:
-    choice=int(input("Enter your choice: "))
+    choice=int(input("Kindly input your choice: "))
     if choice==1:
         view( )
     elif choice==2:
@@ -40,4 +40,4 @@ while True:
     elif choice==5:
         break
     else:
-        print("Wrong choice")
+        print("The choice you've made is wrong")
